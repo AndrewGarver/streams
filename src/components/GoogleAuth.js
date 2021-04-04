@@ -7,6 +7,7 @@ class GoogleAuth extends React.Component {
   componentDidMount() {
     window.gapi.load('client:auth2', () => {
       window.gapi.client.init({
+        // will not work without GAPI clientid stared in .env file at root level. This is not pushed to github. Will have to add if pulling down and running from scratch
         clientId: process.env.REACT_APP_GAPI_KEY,
         scope: 'email'
       }).then(() => {
