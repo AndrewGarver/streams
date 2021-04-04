@@ -15,6 +15,7 @@ class StreamEdit extends React.Component {
   } 
 
   render() {
+    // on first load, result of componentDidMount wont have returned so show loading
     if (!this.props.stream) {
       return <div>Loading...</div>
     }
