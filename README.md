@@ -1,5 +1,7 @@
 ## This project is using the JSON server package to serve a JSON DB simulation.
 
+## Node Media Server used for Streaming
+
 ## Semantic UI is used for styling
 
 
